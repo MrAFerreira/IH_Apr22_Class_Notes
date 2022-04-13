@@ -1,0 +1,40 @@
+/* selectors{
+  property: value;
+  property: value;
+} */
+
+/*
+Type selector
+p {
+  color: red;
+} */
+
+* {
+  font-family: monospace;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.red-bg {
+  /* background-color: red; */
+  /* background-color: #ff0000; */
+  background-color: rgb(255, 0, 0, 0.5);
+}
+.blue-bg {
+  background-color: blue;
+}
+.yellow-bg {
+  background-color: yellow;
+}
+.green-bg {
+  background-color: green;
+}
+
+#special {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
