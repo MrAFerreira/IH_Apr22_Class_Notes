@@ -1,0 +1,41 @@
+/* Direct descendant selector */
+
+#menu > li {
+  width: 100px;
+  height: 50px;
+  font-size: 32px;
+}
+
+/* Descendant selector */
+
+ul em {
+  color: red;
+}
+
+/* Adjacent selector */
+
+.former + div {
+  background-color: green;
+}
+
+.former + p {
+  background-color: red;
+}
+
+h1,
+h2,
+.former + div,
+h3 {
+  background-color: blue;
+}
+
+/* Attribute selector */
+
+a[href*='hack'] {
+  color: green;
+}
+
+a[href='https://www.google.com']
+{
+  background-color: purple;
+}
