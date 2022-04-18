@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  /* EM, REM */
+}
+
+html {
+  font-size: 10px;
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 8px;
+  }
+}
+ul {
+  font-size: 16px;
+}
+
+li {
+  font-size: 1.6rem;
+}
+
+.responsive {
+  /*  width: 200px;
+  height: 200px;
+  background-color: red; */
+  display: flex;
+}
+
+/* .responsive > div {
+  width: 200px;
+  height: 200px;
+}
+
+@media (min-width: 1000px) {
+   .responsive {
+    background-color: blue;
+  }
+  .responsive > div {
+    background-color: blue;
+  }
+}
+
+
+@media (min-width: 650px) and (max-width: 999px) {
+  .responsive {
+    flex-direction: column;
+  }
+} */
+
+.units {
+  width: 50vw;
+  height: 50vh;
+  background-color: blue;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.parent {
+  width: 50%;
+  height: 50%;
+  background-color: purple;
+}
+
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+}

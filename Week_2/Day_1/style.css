@@ -1,0 +1,39 @@
+/* Box sizing - style reset */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+}
+
+/* Border */
+
+.box {
+  /*   border-width: 10px;
+  border-style: solid;
+  border-color: black; */
+  border: 10px solid black;
+  /* border-top-left-radius: 20px; */
+  /*  border-radius: 50%; */
+}
+
+/* Padding */
+
+.box {
+  /* padding: 20px 30px 10px 15px; */
+  padding: 20px;
+}
+
+/* Margin  */
+
+.box {
+  margin: 100px 40px 70px 30px;
+  margin-top: 500px;
+}
