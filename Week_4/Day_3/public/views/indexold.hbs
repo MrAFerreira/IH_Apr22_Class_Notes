@@ -1,0 +1,41 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Hbs example</title>
+  </head>
+  <body>
+    <h1>Ironhackers be like:</h1>
+    {{! <img src='https://c.tenor.com/uBcbvnuP3K0AAAAd/lil-yachty-drake.gi' alt='ironhackers' /> }}
+
+    {{! Handlebar helpers }}
+
+    <h3>Hello {{name}}</h3>
+    <h4>Welcome to the {{bootcamp}} bootcamp</h4>
+    {{#if address}}
+      {{#with address}}
+        <p> {{street}} {{number}}</p>
+      {{/with}}
+    {{else}}
+      <p>You don't have an address yet</p>
+    {{/if}}
+
+    {{#unless cities}}
+      <h1>You don't have any cities yet!</h1>
+    {{/unless}}
+
+    <ul>
+      {{#each cities}}
+        {{#if @first}}
+          <li> <b>{{this}}</b></li>
+        {{else if @last}}
+          <li><em>{{this}}</em></li>
+        {{else}}
+          <li>{{@index}} {{this}}</li>
+        {{/if}}
+      {{/each}}
+    </ul>
+
+  </body>
+</html>
