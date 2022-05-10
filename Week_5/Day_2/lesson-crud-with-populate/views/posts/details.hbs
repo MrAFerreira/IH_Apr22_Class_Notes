@@ -1,0 +1,29 @@
+<h2>{{title}}</h2>
+
+<p>{{content}}</p>
+
+<p>by: {{author.username}}</p>
+{{#unless comments}}
+  <p>No comments!</p>
+{{/unless}}
+
+<hr />
+
+{{#each comments}}
+  <p><i>{{content}}</i></p>
+{{/each}}
+
+<hr />
+
+<h3>Add comment</h3>
+
+<form action='/posts/{{_id}}/comments' method='post'>
+
+  <label for='username'>Username</label>
+  <input type='text' name='author' />
+
+  <textarea name='content' id='content' cols='30' rows='10'></textarea>
+
+  <button type='submit'>Create</button>
+
+</form>
