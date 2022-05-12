@@ -1,0 +1,20 @@
+<h1>Iron Movies</h1>
+<hr />
+<div class='row'>
+  {{#each movies}}
+
+    <div class='col-md-4 col-mb-5'>
+      <div class='card' style='width: 18rem'>
+        <img src='{{imageUrl}}' alt='{{title}}' />
+        <div class='card-body'>
+          <h5 class='card-title'>{{title}}</h5>
+          <p class='card-text'>{{description}}</p>
+          <a href='/movies/{{_id}}/edit' class='btn btn-primary'>Edit</a>
+
+        </div>
+      </div>
+    </div>
+
+  {{/each}}
+
+</div>
