@@ -11,6 +11,8 @@ function Timer() {
   //1st param - callback function
   //2nd param - dependency Array
 
+  //----------------------
+
   useEffect(() => {
     console.log('Mounting phase');
     const id = setInterval(() => {
@@ -25,10 +27,13 @@ function Timer() {
 
     //if the dependency array is empty the function will only trigger once, during the mounting phase
   }, []);
+  //-----------------------------------
 
   useEffect(() => {
     document.title = count;
   }, [count]);
+
+  // ----------------------
 
   return (
     <div>
